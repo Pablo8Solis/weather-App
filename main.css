@@ -11,6 +11,7 @@ html {
 body {
   font-size: 16px; /* 1rem = 10px*/
   background-color: #0f172a;
+  box-sizing: border-box;
   color: #fef3c7;
   height: 100vh;
   overflow: hidden;
@@ -70,6 +71,12 @@ img {
   color: #fff;
   font-family: "Winky Rough", serif;
 }
+@media screen and (max-width: 39rem) {
+  .header__section-inputSearch {
+    height: 3rem;
+    font-size: 1em;
+  }
+}
 .header__section-inputSearch:active, .header__section-inputSearch:focus {
   outline: none;
   border: 2px solid #fff;
@@ -96,7 +103,7 @@ img {
   margin-right: 6rem;
 }
 .header__info-weather-text-title {
-  font-size: clamp(1rem, 5vw, 3rem);
+  font-size: clamp(2.3rem, 5vw, 3rem);
   font-family: "Winky Rough", serif;
 }
 .header__info-weather-text-subtitle {
@@ -104,13 +111,18 @@ img {
   font-family: "Winky Rough", serif;
 }
 .header__info-weather-text-temperatura {
-  font-size: clamp(1rem, 5vw, 3rem);
+  font-size: clamp(3rem, 5vw, 3rem);
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .header__info-weather-icon {
   width: 10rem;
   margin-left: 6rem;
+}
+@media screen and (max-width: 39rem) {
+  .header__info-weather-icon {
+    margin-left: 0.5rem;
+  }
 }
 
 .aside__menu {
@@ -200,6 +212,11 @@ img {
   justify-content: center;
   align-items: stretch;
   margin-top: 1.5rem;
+}
+@media screen and (max-width: 39rem) {
+  .main__weather-info-container {
+    overflow: auto;
+  }
 }
 .main__weather-title {
   font-size: clamp(1rem, 5vw, 1.5rem);
