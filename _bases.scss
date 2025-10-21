@@ -1,0 +1,27 @@
+$colorSecundario:#334155;
+$colorSecundario2:#1e293b;
+$fontText:"Winky Rough", serif;
+$colorTextSecundary: rgba(183, 182, 182, 0.772);
+$colorTextPrimary: #fef3c7;
+
+
+
+@mixin flex-box ($justify:center, $aling:center){
+    display: flex;
+    justify-content: $justify;
+    align-items:$aling;
+}
+@mixin fontTitle{
+    font-family: "Cinzel", serif;
+}
+@mixin fontText{
+    font-family: "Playfair Display", serif;
+}
+@mixin fontTextSecundary{
+    font-family:  "Roboto", serif;
+}
+
+@mixin Celular{
+    @media screen and (max-width:39rem) {@content};
+}
+

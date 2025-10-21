@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/api.js" defer></script>
+    <link rel="icon" href="img/icons/cloud (1).svg">
+<body>
+
+    <section class="container__section">
+
+        <aside class="aside__menu">
+            <article class="aside__menu-info">
+                <div>
+                    <section><img class="aside__menu-info-icons-img" src="img/icons/air-icon.png" alt="icon-air"></section>
+                </div>
+                <div class="aside__menu-info-options">
+                    <a href="index.html" class="aside__menu-info-options-icons"><img class="aside__menu-info-options-icons-img" src="img/icons/weather-icon.svg" alt="icon-weather">
+                        <p class="aside__menu-info-options-icons-text">Weather</p>
+                    </a>
+
+                    <a href="index.html" class="aside__menu-info-options-icons"><img class="aside__menu-info-options-icons-img" src="img/icons/weather-icon.svg" alt="icon-weather">
+                        <p class="aside__menu-info-options-icons-text">Dark mode</p>
+                    </a>
+                    
+                    <section class="aside__menu-info-options-icons"></section>
+                    <section class="aside__menu-info-options-icons"></section>
+                </div>
+            </article>
+        </aside>
+
+        <header class="header">
+            <section class="header__section">
+                <input class="header__section-inputSearch" type="text" placeholder="Buscar ciudad...">
+            </section>
+
+            <section class="header__info">
+                <div></div>
+                
+                <article class="header__info-weather">
+                    </div>
+                    <div class="header__info-weather-text">
+                        <p class="header__info-weather-text-title Namecity">Ciudad</p>
+                        <p class="header__info-weather-text-subtitle description">Descripción</p>
+                    </div>
+
+                    <div>
+                        <p class="header__info-weather-text-temperatura temperature">31°</p>
+                    </div>   
+                </article>
+
+                <article>
+                    <div>
+                       <img class="header__info-weather-icon iconUpdate" src="img/icons/clear-day.svg" alt="icon-sol">
+                    </div>
+                </article>
+
+                <article></article>
+            </section>
+        </header>
+
+        <main class="main">
+            <section class="main__weather">
+                <h2 class="main__weather-title">clima del dia</h2>
+            <div class="main__weather-info-container">
+                <article class="main__weather-info">
+                    <p class="main__weather-info-time sunrise">5:00</p>
+                    <div class="main__weather-info-icon">
+                        <img class="main__weather-info-icon-img tempday9am" src="img/icons/sunrise.svg" alt="icon-cloudy">
+                    </div>
+                    <p class="main__weather-info-icon-text tempsunrise">0°</p>  
+                </article>
+
+                <article class="main__weather-info">
+                    <p class="main__weather-info-time temhourDay1">9:00</p>
+                    <div class="main__weather-info-icon">
+                        <img class="main__weather-info-icon-img iconUpdate2" src="img/icons/parcial-nublado-icon.webp" alt="icon-cloudy">
+                    </div>
+                    <p class="main__weather-info-icon-text tempday9am-text">0°</p>
+                </article>
+
+                <article class="main__weather-info">
+                    <p class="main__weather-info-time temhourDay2">12:00</p>
+                    <div class="main__weather-info-icon">
+                        <img class="main__weather-info-icon-img iconUpdate3" src="img/icons/icon-sol.webp" alt="icon-cloudy">
+                    </div>
+                    <p class="main__weather-info-icon-text tempday12pm">0°</p>  
+                </article>
+
+                <article class="main__weather-info">
+                    <p class="main__weather-info-time temhourDay3">15:00</p>
+                    <div class="main__weather-info-icon">
+                        <img class="main__weather-info-icon-img iconUpdate4" src="img/icons/parcial-nublado-icon.webp" alt="icon-cloudy">
+                    </div>
+                    <p class="main__weather-info-icon-text tempday3pm">0°</p>  
+                </article>
+
+                <article class="main__weather-info">
+                    <p class="main__weather-info-time temhourDay4">18:00</p>
+                    <div class="main__weather-info-icon">
+                        <img class="main__weather-info-icon-img iconUpdate5" src="img/icons/parcial-nublado-icon.webp" alt="icon-cloudy">
+                    </div>
+                    <p class="main__weather-info-icon-text tempday6pm">0°</p>  
+                </article>
+
+                <article class="main__weather-info main__weather-info--last">
+                    <p class="main__weather-info-time sunset">22:00</p>
+                    <div class="main__weather-info-icon">
+                        <img class="main__weather-info-icon-img sunset" src="img/icons/sunset.svg" alt="icon-cloudy">
+                    </div>
+                    <p class="main__weather-info-icon-text tempsunset">0°</p>  
+                </article>
+            </section>
+            </div>
+            <aside class="main__asideMenu">
+                <section class="main__asideMenu-info">
+                    <h1 class="main__asideMenu-info-title">Condiciones del aire</h1>
+                </section>
+
+                <section class="main__asideMenu-info-conditions">
+                    <article class="main__asideMenu-info-conditions-item">
+                        <div class="main__asideMenu-info-conditions-item-container">
+                            <div class="main__asideMenu-info-conditions-item-container-text">
+                            <img src="img/icons/solar--temperature-bold.svg" alt="icon-temperature">
+                            <p class="main__asideMenu-info-conditions-item-container-text3">Sensación del tiempo</p>
+                            </div>
+                            <p class="main__asideMenu-info-conditions-item-container-text2 sensation">30°</p>
+                        </div>
+
+                        <div class="main__asideMenu-info-conditions-item-container">
+                            <div class="main__asideMenu-info-conditions-item-container-text">
+                                <img src="img/icons/weather-icon.svg" alt="icon-temperature">
+                                <p class="main__asideMenu-info-conditions-item-container-text3">Posibilidad de lluvia</p>
+                            </div>
+                            <p class="main__asideMenu-info-conditions-item-container-text2 probabilityRain">3%°</p>
+                        </div>
+                    </article>
+
+                    <article class="main__asideMenu-info-conditions-item">
+                        <div class="main__asideMenu-info-conditions-item-container">
+                            <div class="main__asideMenu-info-conditions-item-container-text">
+                                <img src="img/icons/air-icon.png" style="width: 24px;" alt="icon-temperature">
+                                <p class="main__asideMenu-info-conditions-item-container-text3">Velocidad del viento</p>
+                            </div>
+                            <p class="main__asideMenu-info-conditions-item-container-text2 windSpeed">3 km/h</p>
+                        </div>
+
+                        <div class="main__asideMenu-info-conditions-item-container">
+                            <div class="main__asideMenu-info-conditions-item-container-text">
+                                <img src="img/icons/agua-icon.svg" alt="icon-temperature">
+                                <p class="main__asideMenu-info-conditions-item-container-text3">Humedad del clima</p>
+                            </div>
+                            <p class="main__asideMenu-info-conditions-item-container-text2 humidity">3</p>
+                        </div>
+                    </article>
+                </section>
+            </aside>
+        </main>
+
+        <aside class="aside__weather">
+            <article class="aside__weather-info">
+                <article>
+                    <h2 class="aside__weather-info-title">Previsión del clima</h2>
+                </article>
+
+                <section class="aside__weather-info-conditions-container">
+
+                    <article class="aside__weather-info-conditions">
+                        <section>
+                            <div><p class="aside__weather-info-conditions-item-text">Hoy</p></div>
+                        </section>
+
+                        <section class="aside__weather-info-conditions-item">
+                            <div><img class="aside__weather-info-conditions-item-img iconUpdate" src="img/icons/clear-day.svg" alt="icon"></div>
+                            <p class="aside__weather-info-conditions-item-text description">Soleado</p>
+                        </section>
+
+                        <section><p class="aside__weather-info-conditions-item-text aside__weather-info-conditions-item-text-temp temperature ">0°</p></section>
+                    </article>
+
+                    <article class="aside__weather-info-conditions">
+                        <section>
+                            <div><p class="aside__weather-info-conditions-item-text day1">Mar</p></div>
+                        </section>
+
+                        <section class="aside__weather-info-conditions-item">
+                            <div><img class="aside__weather-info-conditions-item-img iconUpdateNextDays2" src="img/icons/clear-day.svg" alt="icon"></div>
+                            <p class="aside__weather-info-conditions-item-text descriptionNextDays2">Soleado</p>
+                        </section>
+
+                        <section><p class="aside__weather-info-conditions-item-text aside__weather-info-conditions-item-text-temp tempNextDays2">0°</section>
+                    </article>
+
+                    <article class="aside__weather-info-conditions">
+                        <section>
+                            <div><p class="aside__weather-info-conditions-item-text day2">Mie</p></div>
+                        </section>
+
+                        <section class="aside__weather-info-conditions-item">
+                            <div><img class="aside__weather-info-conditions-item-img iconUpdateNextDays3" src="img/icons/clear-day.svg" alt="icon"></div>
+                            <p class="aside__weather-info-conditions-item-text descriptionNextDays3">Soleado</p>
+                        </section>
+
+                        <section><p class="aside__weather-info-conditions-item-text aside__weather-info-conditions-item-text-temp tempNextDays3">0°</section>
+                    </article>
+
+                    <article class="aside__weather-info-conditions">
+                        <section>
+                            <div><p class="aside__weather-info-conditions-item-text day3">Jue</p></div>
+                        </section>
+
+                        <section class="aside__weather-info-conditions-item">
+                            <div><img class="aside__weather-info-conditions-item-img iconUpdateNextDays4" src="img/icons/clear-day.svg" alt="icon"></div>
+                            <p class="aside__weather-info-conditions-item-text descriptionNextDays4">Soleado</p>
+                        </section>
+
+                        <section><p class="aside__weather-info-conditions-item-text aside__weather-info-conditions-item-text-temp tempNextDays4">0°</p></section>
+                    </article>
+
+                    <article class="aside__weather-info-conditions">
+                        <section>
+                            <div><p class="aside__weather-info-conditions-item-text day4">Vie</p></div>
+                        </section>
+
+                        <section class="aside__weather-info-conditions-item">
+                            <div><img class="aside__weather-info-conditions-item-img iconUpdateNextDays5" src="img/icons/clear-day.svg" alt="icon"></div>
+                            <p class="aside__weather-info-conditions-item-text descriptionNextDays5">Soleado</p>
+                        </section>
+
+                        <section><p class="aside__weather-info-conditions-item-text aside__weather-info-conditions-item-text-temp tempNextDays5">0°</p></section>
+                    </article>
+
+                    <article class="aside__weather-info-conditions">
+                        <section>
+                            <div><p class="aside__weather-info-conditions-item-text day5">Sáb</p></div>
+                        </section>
+
+                        <section class="aside__weather-info-conditions-item">
+                            <div><img class="aside__weather-info-conditions-item-img iconUpdateNextDays6" src="img/icons/clear-day.svg" alt="icon"></div>
+                            <p class="aside__weather-info-conditions-item-text descriptionNextDays6">Soleado</p>
+                        </section>
+
+                        <section><p class="aside__weather-info-conditions-item-text aside__weather-info-conditions-item-text-temp tempNextDays6">0°</p></section>
+                    </article>
+
+                    <article class="aside__weather-info-conditions" style="border-bottom: none;">
+                        <section>
+                            <div><p class="aside__weather-info-conditions-item-text day6">Dom</p></div>
+                        </section>
+
+                        <section class="aside__weather-info-conditions-item">
+                            <div><img class="aside__weather-info-conditions-item-img iconUpdateNextDays7" src="img/icons/clear-day.svg" alt="icon"></div>
+                            <p class="aside__weather-info-conditions-item-text descriptionNextDays7">Soleado</p>
+                        </section>
+
+                        <section><p class="aside__weather-info-conditions-item-text aside__weather-info-conditions-item-text-temp tempNextDays7">0°</p></section>
+                    </article>
+                </section>        
+
+
+
+
+
+            </article>
+        </aside>
+
+    </section>
+</body>
+</html>
