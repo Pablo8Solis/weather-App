@@ -46,7 +46,8 @@ async function checkWeather(city){
         console.log(sunriseText);
     
     
-        //Iconos dia
+       const functionIconsUpdate = ( weatherInfo) => {
+         //Iconos dia
         if(weatherInfo === "Clear" && icon.includes("d")){
             iconUpdate.src = "img/icons/clear-day.svg"
         } else if(weatherInfo === "Clouds" && icon.includes("d")){
@@ -78,6 +79,10 @@ async function checkWeather(city){
         } else if(weatherInfo === "Clear" && icon.includes("n")){
             iconUpdate.src = "img/icons/clear-night.svg"
         }
+
+    }
+
+    functionIconsUpdate(weatherInfo);
 
         //Actualizar iconos del clima actual
         iconUpdate.forEach(Element =>{
