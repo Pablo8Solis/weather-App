@@ -190,7 +190,7 @@ async function checkWeather5days(city){
         const Days13pmHours = Days13pm.getHours() +":"+Days13pm.getMinutes() + Days13pm.getMinutes();
         const Days16pmHours = Days16pm.getHours() +":"+Days16pm.getMinutes() + Days16pm.getMinutes();
         const Days19pmHours = Days19pm.getHours() +":"+Days19pm.getMinutes() + Days19pm.getMinutes();
-        const Days19amHoursText = document.querySelector(".temhourDay1").innerHTML = Days19amHours;
+        const Days19amHoursText = document.querySelector(".temhourDay1").innerHTML = Days19pmHours;
         const Days112amHoursText = document.querySelector(".temhourDay2").innerHTML = Days112amHours;
         console.log(Days19amHours);
         console.log(Days112amHours);

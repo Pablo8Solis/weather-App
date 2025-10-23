@@ -43,6 +43,12 @@ img {
     height: auto;
   }
 }
+@media screen and (max-width: 768px) {
+  .container__section {
+    grid-template-columns: 5rem 2fr 2fr;
+    grid-template-rows: auto 1fr;
+  }
+}
 
 .header {
   grid-column: 2/3;
@@ -131,6 +137,11 @@ img {
 @media screen and (max-width: 39rem) {
   .header__info-weather-icon {
     margin-left: 0.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__info-weather-icon {
+    margin-left: 0rem;
   }
 }
 
@@ -388,6 +399,11 @@ img {
   border-bottom: 0.5px solid #fff;
   padding: 0.5rem;
   text-align: justify;
+}
+@media screen and (max-width: 768px) {
+  .aside__weather-info-conditions {
+    gap: 1rem;
+  }
 }
 .aside__weather-info-conditions-item {
   display: flex;

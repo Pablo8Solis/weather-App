@@ -37,6 +37,10 @@ img{
         grid-template-rows: repeat(5, 1fr);
         height: auto;
     }
+    @include tablet{
+        grid-template-columns: 5rem 2fr 2fr;
+        grid-template-rows: auto 1fr;
+    }
 }
 
 .header{
@@ -118,6 +122,9 @@ img{
                 margin-left: 6rem;
                 @include Celular{
                     margin-left: .5rem;
+                }
+                @include tablet{
+                    margin-left: 0rem;
                 }
             }
 
@@ -375,6 +382,9 @@ img{
             border-bottom: 0.5px solid #fff;
             padding: .5rem;
             text-align: justify;
+            @include tablet{
+                gap: 1rem
+            }
 
             &-item{
                 @include flex-box(space-between,center);

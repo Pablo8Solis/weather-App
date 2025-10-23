@@ -25,3 +25,7 @@ $colorTextPrimary: #fef3c7;
     @media screen and (max-width:39rem) {@content};
 }
 
+@mixin tablet{
+    @media screen and (max-width:768px) {@content};
+}
+
