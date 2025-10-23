@@ -26,9 +26,9 @@
                         <p class="aside__menu-info-options-icons-text">Weather</p>
                     </a>
 
-                    <a href="index.html" class="aside__menu-info-options-icons"><img class="aside__menu-info-options-icons-img" src="img/icons/weather-icon.svg" alt="icon-weather">
-                        <p class="aside__menu-info-options-icons-text">Dark mode</p>
-                    </a>
+                    <div href="index.html" class="aside__menu-info-options-icons aside__menu-info-options-icons-mode"><img class="aside__menu-info-options-icons-img" src="img/icons/dark-theme-svgrepo-com.svg" alt="icon-weather">
+                        <p class="aside__menu-info-options-icons-text aside__menu-info-options-icons-text-1">Modo Claro</p>
+                    </div>
                     
                     <section class="aside__menu-info-options-icons"></section>
                     <section class="aside__menu-info-options-icons"></section>
@@ -39,6 +39,9 @@
         <header class="header">
             <section class="header__section">
                 <input class="header__section-inputSearch" type="text" placeholder="Buscar ciudad...">
+                  <div href="index.html" class="aside__menu-info-options-icons aside__menu-info-options-icons-mode header__section-inputSearch-mode"><img class="aside__menu-info-options-icons-img" src="img/icons/dark-theme-svgrepo-com.svg" alt="icon-weather">
+                        
+                    </div>
             </section>
 
             <section class="header__info">
@@ -52,7 +55,7 @@
                     </div>
 
                     <div>
-                        <p class="header__info-weather-text-temperatura temperature">31°</p>
+                        <p class="header__info-weather-text-temperatura temperature">0°</p>
                     </div>   
                 </article>
 
@@ -70,16 +73,9 @@
             <section class="main__weather">
                 <h2 class="main__weather-title">clima del dia</h2>
             <div class="main__weather-info-container">
-                <article class="main__weather-info">
-                    <p class="main__weather-info-time sunrise">5:00</p>
-                    <div class="main__weather-info-icon">
-                        <img class="main__weather-info-icon-img tempday9am" src="img/icons/sunrise.svg" alt="icon-cloudy">
-                    </div>
-                    <p class="main__weather-info-icon-text tempsunrise">0°</p>  
-                </article>
 
                 <article class="main__weather-info">
-                    <p class="main__weather-info-time temhourDay1">9:00</p>
+                    <p class="main__weather-info-time temhourDay1">0:00</p>
                     <div class="main__weather-info-icon">
                         <img class="main__weather-info-icon-img iconUpdate2" src="img/icons/parcial-nublado-icon.webp" alt="icon-cloudy">
                     </div>
@@ -87,11 +83,11 @@
                 </article>
 
                 <article class="main__weather-info">
-                    <p class="main__weather-info-time temhourDay2">12:00</p>
+                    <p class="main__weather-info-time sunrise">5:00</p>
                     <div class="main__weather-info-icon">
-                        <img class="main__weather-info-icon-img iconUpdate3" src="img/icons/icon-sol.webp" alt="icon-cloudy">
+                        <img class="main__weather-info-icon-img tempday9am" src="img/icons/sunrise.svg" alt="icon-cloudy">
                     </div>
-                    <p class="main__weather-info-icon-text tempday12pm">0°</p>  
+                    <p class="main__weather-info-icon-text tempsunrise">0°</p>  
                 </article>
 
                 <article class="main__weather-info">
@@ -110,13 +106,22 @@
                     <p class="main__weather-info-icon-text tempday6pm">0°</p>  
                 </article>
 
-                <article class="main__weather-info main__weather-info--last">
+                <article class="main__weather-info">
                     <p class="main__weather-info-time sunset">22:00</p>
                     <div class="main__weather-info-icon">
                         <img class="main__weather-info-icon-img sunset" src="img/icons/sunset.svg" alt="icon-cloudy">
                     </div>
                     <p class="main__weather-info-icon-text tempsunset">0°</p>  
                 </article>
+
+                 <article class="main__weather-info main__weather-info--last">
+                    <p class="main__weather-info-time temhourDay2">21:00</p>
+                    <div class="main__weather-info-icon">
+                        <img class="main__weather-info-icon-img iconUpdate3" src="img/icons/icon-sol.webp" alt="icon-cloudy">
+                    </div>
+                    <p class="main__weather-info-icon-text tempday12pm">0°</p>  
+                </article>
+
             </section>
             </div>
             <aside class="main__asideMenu">

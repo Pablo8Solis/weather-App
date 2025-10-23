@@ -190,6 +190,8 @@ async function checkWeather5days(city){
         const Days13pmHours = Days13pm.getHours() +":"+Days13pm.getMinutes() + Days13pm.getMinutes();
         const Days16pmHours = Days16pm.getHours() +":"+Days16pm.getMinutes() + Days16pm.getMinutes();
         const Days19pmHours = Days19pm.getHours() +":"+Days19pm.getMinutes() + Days19pm.getMinutes();
+        const Days19amHoursText = document.querySelector(".temhourDay1").innerHTML = Days19amHours;
+        const Days112amHoursText = document.querySelector(".temhourDay2").innerHTML = Days112amHours;
         console.log(Days19amHours);
         console.log(Days112amHours);
         console.log(Days13pmHours);
@@ -467,9 +469,9 @@ async function checkWeather5days(city){
             }
 
             if(weatherNextDays[0] === "Clear" && iconoBloque1[0].includes("n")){
-                iconUpdateNextDays2.src = "img/icons/clear-night.svg"
+                iconUpdateNextDays2.src = "img/icons/clear-day.svg"
             } else if(weatherNextDays[0] === "Clouds" && iconoBloque1[0].includes("n")){
-                iconUpdateNextDays2.src = "img/icons/partly-cloudy-night.svg"
+                iconUpdateNextDays2.src = "img/icons/partly-cloudy-day.svg"
             }else if (weatherNextDays[0] === "Rain" && iconoBloque1[0].includes("n")){
                 iconUpdateNextDays2.src = "img/icons/rain.svg"
             }else if (weatherNextDays[0] === "Mist" && iconoBloque1[0].includes("n")){
@@ -477,7 +479,7 @@ async function checkWeather5days(city){
             }else if (weatherNextDays[0] === "Drizzle" && iconoBloque1[0].includes("n")){
                 iconUpdateNextDays2.src = "img/icons/drizzle.svg"
             }else if (weatherNextDays[0] === "Haze" && iconoBloque1[0].includes("n")){
-                iconUpdateNextDays2.src = "img/icons/haze-night.svg"
+                iconUpdateNextDays2.src = "img/icons/haze-day.svg"
             }else if (weatherNextDays[0] === "Snow" && iconoBloque1[0].includes("n")){
                 iconUpdateNextDays2.src = "img/icons/snow.svg"
             }
@@ -501,9 +503,9 @@ async function checkWeather5days(city){
             }
 
             if(weatherNextDays[1] === "Clear" && iconoBloque1[1].includes("n")){
-                iconUpdateNextDays3.src = "img/icons/clear-night.svg"
+                iconUpdateNextDays3.src = "img/icons/clear-day.svg"
             } else if(weatherNextDays[1] === "Clouds" && iconoBloque1[1].includes("n")){
-                iconUpdateNextDays3.src = "img/icons/partly-cloudy-night.svg"
+                iconUpdateNextDays3.src = "img/icons/partly-cloudy-day.svg"
             }else if (weatherNextDays[1] === "Rain" && iconoBloque1[1].includes("n")){
                 iconUpdateNextDays3.src = "img/icons/rain.svg"
             }else if (weatherNextDays[1] === "Mist" && iconoBloque1[1].includes("n")){
@@ -535,9 +537,9 @@ async function checkWeather5days(city){
             }
 
             if(weatherNextDays[2] === "Clear" && iconoBloque1[2].includes("n")){
-                iconUpdateNextDays4.src = "img/icons/clear-night.svg"
+                iconUpdateNextDays4.src = "img/icons/clear-day.svg"
             } else if(weatherNextDays[2] === "Clouds" && iconoBloque1[2].includes("n")){
-                iconUpdateNextDays4.src = "img/icons/partly-cloudy-night.svg"
+                iconUpdateNextDays4.src = "img/icons/partly-cloudy-day.svg"
             }else if (weatherNextDays[2] === "Rain" && iconoBloque1[2].includes("n")){
                 iconUpdateNextDays4.src = "img/icons/rain.svg"
             }else if (weatherNextDays[2] === "Mist" && iconoBloque1[2].includes("n")){
@@ -571,7 +573,7 @@ async function checkWeather5days(city){
             if(weatherNextDays[3] === "Clear" && iconoBloque1[3].includes("n")){
                 iconUpdateNextDays5.src = "img/icons/clear-day.svg"
             } else if(weatherNextDays[3] === "Clouds" && iconoBloque1[3].includes("n")){
-                iconUpdateNextDays5.src = "img/icons/partly-cloudy-night.svg"
+                iconUpdateNextDays5.src = "img/icons/partly-cloudy-day.svg"
             }else if (weatherNextDays[3] === "Rain" && iconoBloque1[3].includes("n")){
                 iconUpdateNextDays5.src = "img/icons/rain.svg"
             }else if (weatherNextDays[3] === "Mist" && iconoBloque1[3].includes("n")){
@@ -579,7 +581,7 @@ async function checkWeather5days(city){
             }else if (weatherNextDays[3] === "Drizzle" && iconoBloque1[3].includes("n")){
                 iconUpdateNextDays5.src = "img/icons/drizzle.svg"
             }else if (weatherNextDays[3] === "Haze" && iconoBloque1[3].includes("n")){
-                iconUpdateNextDays5.src = "img/icons/haze-night.svg"
+                iconUpdateNextDays5.src = "img/icons/haze-day.svg"
             } else if(weatherNextDays[3] === "Snow" && iconoBloque1[3].includes("n")){
                 iconUpdateNextDays5.src = "img/icons/snow.svg"
             }
@@ -603,9 +605,9 @@ async function checkWeather5days(city){
             }
 
             if(weatherNextDays[4] === "Clear" && iconoBloque1[4].includes("n")){
-                iconUpdateNextDays6.src = "img/icons/clear-night.svg"
+                iconUpdateNextDays6.src = "img/icons/clear-day.svg"
             } else if(weatherNextDays[4] === "Clouds" && iconoBloque1[4].includes("n")){
-                iconUpdateNextDays6.src = "img/icons/partly-cloudy-night.svg"
+                iconUpdateNextDays6.src = "img/icons/partly-cloudy-day.svg"
             }else if (weatherNextDays[4] === "Rain" && iconoBloque1[4].includes("n")){
                 iconUpdateNextDays6.src = "img/icons/rain.svg"
             }else if (weatherNextDays[4] === "Mist" && iconoBloque1[4].includes("n")){
@@ -613,7 +615,7 @@ async function checkWeather5days(city){
             }else if (weatherNextDays[4] === "Drizzle" && iconoBloque1[4].includes("n")){
                 iconUpdateNextDays6.src = "img/icons/drizzle.svg"
             }else if (weatherNextDays[4] === "Haze" && iconoBloque1[4].includes("n")){
-                iconUpdateNextDays6.src = "img/icons/haze-night.svg"
+                iconUpdateNextDays6.src = "img/icons/haze-day.svg"
             } else if(weatherNextDays[4] === "Snow" && iconoBloque1[4].includes("n")){
                 iconUpdateNextDays6.src = "img/icons/snow.svg"
             }
@@ -636,9 +638,9 @@ async function checkWeather5days(city){
             }
 
             if(weatherNextDays[5] === "Clear" && iconoBloque1[5].includes("n")){
-                iconUpdateNextDays7.src = "img/icons/clear-night.svg"
+                iconUpdateNextDays7.src = "img/icons/clear-day.svg"
             } else if(weatherNextDays[5] === "Clouds" && iconoBloque1[5].includes("n")){
-                iconUpdateNextDays7.src = "img/icons/partly-cloudy-night.svg"
+                iconUpdateNextDays7.src = "img/icons/partly-cloudy-day.svg"
             }else if (weatherNextDays[5] === "Rain" && iconoBloque1[5].includes("n")){
                 iconUpdateNextDays7.src = "img/icons/rain.svg"
             }else if (weatherNextDays[5] === "Mist" && iconoBloque1[5].includes("n")){
@@ -646,7 +648,7 @@ async function checkWeather5days(city){
             }else if (weatherNextDays[5] === "Drizzle" && iconoBloque1[5].includes("n")){
                 iconUpdateNextDays7.src = "img/icons/drizzle.svg"
             }else if (weatherNextDays[5] === "Haze" && iconoBloque1[5].includes("n")){
-                iconUpdateNextDays7.src = "img/icons/haze-night.svg"
+                iconUpdateNextDays7.src = "img/icons/haze-day.svg"
             } else if(weatherNextDays[5] === "Snow" && iconoBloque1[5].includes("n")){
                 iconUpdateNextDays7.src = "img/icons/snow.svg"
             }
@@ -727,3 +729,40 @@ searchCity.addEventListener("keydown",btn=>{
 
 });
 
+
+//Hacer que sea modo claro o modo oscuro
+const buttonMode = document.querySelectorAll(".aside__menu-info-options-icons-mode");
+const body = document.querySelector("body");
+const textMode = document.querySelector(".aside__menu-info-options-icons-text-1");
+const inputSearch = document.querySelector(".header__section-inputSearch");
+
+//Secciones
+const sectionMenu = document.querySelector(".aside__menu-info");
+const sectionHeader = document.querySelector(".main__asideMenu");
+const sectionMain = document.querySelector(".main__weather");
+const sectionAsideWeather = document.querySelector(".aside__weather-info");
+
+buttonMode.forEach(element => {
+    element.addEventListener("click",()=>{
+   
+        body.classList.toggle("clearMode");
+        if(body.classList.contains("clearMode")){
+            textMode.innerHTML = "Modo Oscuro"
+        }else{
+            textMode.innerHTML = "Modo Claro"
+        }
+
+         sectionMenu.classList.toggle("clearModeSections");
+    sectionMenu.classList.toggle("glass-card");
+    sectionHeader.classList.toggle("clearModeSections");
+    sectionHeader.classList.toggle("glass-card");
+    sectionMain.classList.toggle("clearModeSections");
+    sectionMain.classList.toggle("glass-card");
+    sectionAsideWeather.classList.toggle("clearModeSections");
+    sectionAsideWeather.classList.toggle("glass-card");
+    inputSearch.classList.toggle("clearModeSections");
+    inputSearch.classList.toggle("glass-card");
+    })
+
+   
+})

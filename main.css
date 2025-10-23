@@ -15,6 +15,7 @@ body {
   color: #fef3c7;
   height: 100vh;
   overflow: hidden;
+  transition: 0.5s ease-in-out;
 }
 @media screen and (max-width: 39rem) {
   body {
@@ -61,10 +62,18 @@ img {
   justify-content: start;
   align-items: start;
 }
+@media screen and (max-width: 39rem) {
+  .header__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
 .header__section-inputSearch {
   width: 100%;
   height: 2.5rem;
-  border-radius: 1rem;
+  border-radius: 2rem;
   border: none;
   padding: 0.5rem;
   background-color: #334155;
@@ -169,6 +178,7 @@ img {
   flex-direction: column;
   gap: 0.5rem;
   text-decoration: none;
+  cursor: pointer;
 }
 .aside__menu-info-options-icons-img {
   width: 2rem;
@@ -351,6 +361,11 @@ img {
   overflow: auto;
   margin-top: 4rem;
 }
+@media screen and (max-width: 39rem) {
+  .aside__weather-info {
+    margin-top: 3rem;
+  }
+}
 .aside__weather-info-conditions-container {
   display: flex;
   justify-content: center;
@@ -401,11 +416,22 @@ img {
   flex-shrink: 0;
 }
 
+.clearMode {
+  background-color: #0c4a6e;
+  color: #fff;
+  transition: 0.5s ease-in;
+}
+
+.clearModeSections {
+  background-color: #4b5563;
+  transition: 0.5s ease-in-out;
+}
+
 .glass-card {
   background: rgba(255, 255, 255, 0.11);
   backdrop-filter: blur(13px);
   -webkit-backdrop-filter: blur(13px);
-  border-radius: 20px;
+  border-radius: 2rem;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 -1px 0 rgba(255, 255, 255, 0.1), inset 0 0 0px 0px rgba(255, 255, 255, 0);
   position: relative;
@@ -430,4 +456,13 @@ img {
   width: 1px;
   height: 100%;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), transparent, rgba(255, 255, 255, 0.3));
+}
+
+.header__section-inputSearch-mode {
+  display: none;
+}
+@media screen and (max-width: 39rem) {
+  .header__section-inputSearch-mode {
+    display: block;
+  }
 }/*# sourceMappingURL=main.css.map */
