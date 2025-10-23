@@ -352,7 +352,7 @@ img {
 }
 @media screen and (max-width: 39rem) {
   .aside__weather {
-    grid-area: 7/1/10/4;
+    grid-area: 8/1/10/4;
     height: -moz-fit-content;
     height: fit-content;
   }
@@ -373,7 +373,7 @@ img {
 }
 @media screen and (max-width: 39rem) {
   .aside__weather-info {
-    margin-top: 5rem;
+    margin-top: 0rem;
   }
 }
 .aside__weather-info-conditions-container {
@@ -440,6 +440,20 @@ img {
 .clearModeSections {
   background-color: #4b5563;
   transition: 0.5s ease-in-out;
+}
+
+.footer {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Winky Rough", serif;
+  display: none;
+}
+@media screen and (max-width: 39rem) {
+  .footer {
+    display: flex;
+  }
 }
 
 .glass-card {

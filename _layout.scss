@@ -343,7 +343,7 @@ img{
     min-height: 0; // que pueda reducir su altura dentro del grid
     overflow: auto; // scroll interno si el contenido crece
     @include Celular{
-        grid-area: 7 / 1 / 10 / 4; 
+        grid-area: 8 / 1 / 10 / 4; 
         height: fit-content;
     }
 
@@ -359,7 +359,7 @@ img{
         overflow: auto; // permitir scroll interno si el contenido crece
         margin-top: 4rem;
         @include Celular{
-            margin-top: 5rem;
+           margin-top: 0rem;
         }
 
         &-conditions-container{
@@ -427,4 +427,14 @@ img{
     background-color: #4b5563;
     transition: .5s ease-in-out;
 
+}
+
+.footer{
+   padding: 2rem;
+   @include flex-box(center,center);
+   font-family: $fontText;
+   display: none;
+   @include Celular{
+    display: flex;
+   }
 }
