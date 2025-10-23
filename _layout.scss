@@ -359,7 +359,7 @@ img{
         overflow: auto; // permitir scroll interno si el contenido crece
         margin-top: 4rem;
         @include Celular{
-            margin-top: 3rem;
+            margin-top: 5rem;
         }
 
         &-conditions-container{

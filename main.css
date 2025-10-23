@@ -373,7 +373,7 @@ img {
 }
 @media screen and (max-width: 39rem) {
   .aside__weather-info {
-    margin-top: 3rem;
+    margin-top: 5rem;
   }
 }
 .aside__weather-info-conditions-container {
